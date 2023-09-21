@@ -1,0 +1,19 @@
+.back-img{
+    background-image: url(todo.png);
+    background-position: center;
+    background-size: cover;
+}
+.body-img{
+    background-image: url(bg.png);
+    background-size: cover;
+}
+.div-bg{
+    border: none;
+    outline: none;
+    background-color: color-mix(in srgb, black 20%, skyblue 20%);
+}
+.todo-bg{
+    border: none;
+    outline: none;
+    background-color:color-mix(in srgb, black 20%, aliceblue 90%);
+}
