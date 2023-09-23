@@ -43,17 +43,17 @@ session_start();
                             $data = $sonuc->fetchAll(PDO::FETCH_ASSOC);
                             foreach ($data as $item) {
                                 foreach ($item as $i) {
-                                    echo "<li class='d-flex pt-2'>";
-                                    echo "<div class='form-check mx-2'>";
+                                    echo "<li class='d-flex pt-2 text-wrap'>";
+                                    echo "<div class='form-check mx-2 '>";
                                     echo "<input class='form-check-input bg-secondary ' type='checkbox'>";
                                     echo "</div>";
-                                    echo "<p class='ps-5 col-md-6'>";
+                                    echo "<p class='ps-md-5 col-sm-4 col-md-6'>";
                                     echo $i;
                                     echo "</p>";
-                                    echo "<a class='ps-5 col-md-3 text-decoration-none text-dark'>";
+                                    echo "<a class='ps-md-5 ps-sm-3 col-sm-2 col-md-3 text-decoration-none text-dark'>";
                                     echo "Düzenle";
                                     echo "</a>";
-                                    echo "<a class='ps-5 col-md-3 text-danger text-decoration-none '>";
+                                    echo "<a class='ps-md-5 ps-sm-5 col-sm-2 col-md-3 text-danger text-decoration-none text-wrap'>";
                                     echo "Sil";
                                     echo "</a>";
                                     echo "</li>";

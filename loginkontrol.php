@@ -1,6 +1,13 @@
 <?php
     $db = new PDO("sqlite:todo.db");
     try {
+        $table="CREATE TABLE IF NOT EXISTS kullanicilar(
+                  kullaniciadi VARCHAR(15) PRIMARY KEY,
+                  adsoyad VARCHAR(30) NOT NULL,
+                  email VARCHAR(40) UNIQUE NOT NULL,
+                  sifre VARCHAR(100) NOT NULL
+                )";
+        $db->exec($table);
         $kadi=strip_tags($_POST['kullaniciadi']);
         $sifre = sha1($_POST['password']);
         $sorgu = $db->prepare("SELECT * FROM kullanicilar WHERE kullaniciadi=? AND sifre=?");
