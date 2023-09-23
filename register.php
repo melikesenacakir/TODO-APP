@@ -20,35 +20,26 @@
             <form action="dbkayit.php" method="post">
                 <div class="row g-3">
                     <div class="form-floating col mb-3">
-                        <input type="text" class="form-control" id="isim" placeholder="isim" aria-label="First name">
-                        <label for="isim">İsim</label>
+                        <input type="text" class="form-control" id="adsoyad" name="adsoyad" placeholder="Ad-Soyad">
+                        <label for="adsoyad">Ad-Soyad</label>
                     </div>
                     <div class="form-floating col mb-3">
-                        <input type="text" class="form-control" id="soyisim" placeholder="Soyisim" aria-label="Last name">
-                        <label for="soyisim">Soyisim</label>
+                        <input type="text" class="form-control" id="kullaniciadi" name="kullaniciadi" placeholder="Kullanıcı adı">
+                        <label for="kullaniciadi">Kullanıcı adı</label>
                     </div>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                    <label for="email">Mail Adresiniz</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+                    <label for="email">Mail Adresi</label>
                 </div>
                 <div class="form-floating">
-                    <input type="password" class="form-control" id="password" placeholder="password" aria-labelledby="help">
-                    <label for="Password">Şifre oluşturun</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="password" aria-labelledby="help">
+                    <label for="Password">Şifre</label>
                     <div id="help" class="form-text">
                         Şifreniz 8-20 karakter uzunluğunda olmalı, sayı ve özel karakterler içermelidir.
                     </div>
-                    <div class="form-check form-check-inline mb-2">
-                        <input class="form-check-input" type="radio" id="kadin" value="kadin" name="cinsiyet">
-                        <label class="form-check-label" for="kadin">Kadın</label>
-                    </div>
-                    <div class="form-check form-check-inline mb-2 mt-2">
-                        <input class="form-check-input" type="radio" id="erkek" value="erkek" name="cinsiyet">
-                        <label class="form-check-label" for="erkek">Erkek</label>
-                    </div>
-
                     <div class="d-grid gap-3">
-                        <input type="submit" class="btn btn-outline-primary mt-2" value="kayıt ol">
+                        <input type="submit" class="btn btn-outline-primary mt-2" name="buton" value="kayıt ol">
                     </div>
                 </div>
             </form>
