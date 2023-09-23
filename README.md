@@ -11,7 +11,7 @@ To Do List
 
 ![image](https://github.com/melikesenacakir/TODO-APP/assets/115591143/3df6189d-1462-416f-9f6f-d3c6d5bd5b94)
 
-Session Kontrolü Yapılmaktadır
+Session Control
 
 ![image](https://github.com/melikesenacakir/TODO-APP/assets/115591143/00b85fa2-aa3d-4abf-a64e-20fd4ce3bb4d)
 
