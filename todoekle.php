@@ -3,8 +3,8 @@ session_start();
 try {
     $db = new PDO("sqlite:todo.db");
 
-    if (isset($_POST['buton'])) {
-        $sql = "INSERT INTO todolist(kullaniciadi,todo) VALUES (?, ?)";
+    //if (isset($_POST['buton'])) {
+        $sql = "INSERT INTO todolist(kullaniciadi,todo,checked) VALUES (?, ?,?)";
         $sonuc = $db->prepare($sql);
         $kadi=strip_tags($_SESSION['kullanici']);
         $todo=strip_tags($_POST['todo']);
@@ -15,11 +15,12 @@ try {
         } else {
             $ekle = $sonuc->execute([
                 $kadi,
-                $todo
+                $todo,
+                0
             ]);
         }
         header("Location: index.php");
-    }
+
 }catch(PDOException $par){
     echo $par;
 }
