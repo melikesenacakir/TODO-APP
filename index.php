@@ -8,6 +8,7 @@ session_start();
         <meta name="author" content="Melike Sena Çakır">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="bootstrap.css">
+        <script src="bootstrap.js"></script>
         <title>To-Do Application</title>
     </head>
     <body class="body-img">
@@ -19,8 +20,8 @@ session_start();
         <a  class="text-decoration-none text-dark" href='cikis.php'>Çıkış Yap</a>
     </div>
     <div class="text-center">
-        <h1 class="mx-5"> TO-DO APP</h1>
-        <h3 class="text-secondary">Undated Planner | To Do List</h3>
+        <h1 class="mx-5">TO-DO APP</h1>
+        <h3 class="text-secondary">Undated Planner |  To Do List</h3>
     </div>
     <div class="container-fluid mt-5">
         <div class="row mx-auto input-group mb-3 w-50 div-bg p-3 rounded-5">
@@ -28,12 +29,6 @@ session_start();
             <input type="text" class="form-control bg-transparent rounded-start-4" placeholder="to do ara.." name="search">
             <button class="btn btn-outline-secondary rounded-end-4" name="buton">ARA</button>
         </form>
-            <div class="form-floating">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5Z"/>
-            </svg>
-            <a href="index.php" class="text-decoration-none link-dark">Geri git</a>
-            </div>
         </div>
 
        <div class="row mx-auto input-group mt-3 w-50 div-bg p-3 rounded-5">
@@ -55,7 +50,7 @@ session_start();
                         if($session and !isset($_POST['search'])) {
                             $sql = "SELECT * FROM todolist WHERE kullaniciadi=?";
                             $sonuc = $db->prepare($sql);
-                            $sonuc->execute(array($session));
+                            $sonuc->execute([$session]);
                             $data = $sonuc->fetchAll(PDO::FETCH_ASSOC);
                             foreach ($data as $item) {
                                     $to=$item['todo'];
@@ -106,7 +101,7 @@ session_start();
                             $sql = "SELECT * FROM todolist WHERE kullaniciadi=? and todo LIKE '%$search%' ";
                             $sonuc = $db->prepare($sql);
                             $kadi=strip_tags($_SESSION['kullanici']);
-                            $sonuc->execute(array($kadi));
+                            $sonuc->execute([$kadi]);
                             $data = $sonuc->fetchAll(PDO::FETCH_ASSOC);
                             foreach ($data as $item) {
                                     $to=$item['todo'];

@@ -1,13 +1,11 @@
 <?php
 
 try {
-    $db = new PDO("sqlite:todo.db");
-
-    if (isset($_POST['buton'])) {
+        $db = new PDO("sqlite:todo.db");
         $table="CREATE TABLE IF NOT EXISTS kullanicilar(
                   kullaniciadi VARCHAR(15) PRIMARY KEY,
                   adsoyad VARCHAR(30) NOT NULL,
-                  email VARCHAR(40) UNIQUE NOT NULL,
+                  email VARCHAR(40) NOT NULL,
                   sifre VARCHAR(100) NOT NULL
                 )";
         $db->exec($table);
@@ -35,9 +33,8 @@ try {
             echo "<script>alert('kullanıcı oluşturuldu');</script>";
             echo "<script>window.location.href='index.php'</script>";
         }
-    }
 }catch(PDOException $par){
-    echo "<script>alert('Bilgileri kontrol edip tekrar deneyiniz!');</script>";
+    echo "<script>alert('Kullanıcı ismi kullanılmakta!');</script>";
     echo "<script>window.location.href='register.php'</script>";
     }
     $db=null;

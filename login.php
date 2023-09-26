@@ -19,7 +19,7 @@
                 <h3 class="text-sm-center pb-5">LOGIN PAGE</h3>
                 <form action="loginkontrol.php" method="post">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="kullaniciadi" name="kullaniciadi" placeholder="Kullanıcı Adınız">
+                        <input type="text" class="form-control" id="kullaniciadi" name="kullaniciadi" placeholder="Kullanıcı Adınız" autofocus>
                         <label for="text">Kullanıcı Adınız</label>
                     </div>
                     <div class="form-floating">

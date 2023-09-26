@@ -20,7 +20,7 @@
             <form action="dbkayit.php" method="post">
                 <div class="row g-3">
                     <div class="form-floating col mb-3">
-                        <input type="text" class="form-control" id="adsoyad" name="adsoyad" placeholder="Ad-Soyad">
+                        <input type="text" class="form-control" id="adsoyad" name="adsoyad" placeholder="Ad-Soyad" autofocus>
                         <label for="adsoyad">Ad-Soyad</label>
                     </div>
                     <div class="form-floating col mb-3">
