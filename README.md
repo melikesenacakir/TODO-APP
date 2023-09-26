@@ -1,20 +1,20 @@
 # TODO-APP
 Login Page
 
-![image](https://github.com/melikesenacakir/TODO-APP/assets/115591143/053af249-a2c5-4621-b038-0af6bbf67262)
+![image](https://github.com/melikesenacakir/TODO-APP/assets/115591143/4ddeb868-a606-43eb-8f0b-1851fbdbd85a)
 
 Register Page
 
-![image](https://github.com/melikesenacakir/TODO-APP/assets/115591143/d002758d-515f-4e5a-8975-45e2b90c3bb3)
+![image](https://github.com/melikesenacakir/TODO-APP/assets/115591143/080be6d4-2b22-4aca-928a-7462c923006a)
 
 To Do List
 
-![image](https://github.com/melikesenacakir/TODO-APP/assets/115591143/64ffee89-2b07-449f-9df9-6952f3a1e6da)
-
+![image](https://github.com/melikesenacakir/TODO-APP/assets/115591143/e8410cc2-dd55-428c-8a76-cc5bfd201e4b)
 
 Session Control
 
-![image](https://github.com/melikesenacakir/TODO-APP/assets/115591143/00b85fa2-aa3d-4abf-a64e-20fd4ce3bb4d)
+![image](https://github.com/melikesenacakir/TODO-APP/assets/115591143/2e62f5ba-cac6-46b8-a78b-6a0043d2b4a1)
+
 
 
 
